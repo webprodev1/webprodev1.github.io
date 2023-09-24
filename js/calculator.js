@@ -152,7 +152,7 @@ function loadAucLocations(side=false)
 
   $.ajax({
     type:"GET",
-    url : "/calculator-get-auclocations",
+    url : "https://carmarket.az/calculator-get-auclocations",
     data : "auc_id="+aucId,
     success : function(response)
     {
@@ -406,7 +406,7 @@ function loadAucLocationsSm(){
 
   $.ajax({
     type:"GET",
-    url : "/calculator-get-auclocations",
+    url : "https://carmarket.az/calculator-get-auclocations",
     data : "auc_id="+aucId,
     success : function(response)
     {
