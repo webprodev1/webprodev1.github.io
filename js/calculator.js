@@ -91,7 +91,7 @@ $('#sideCalcNextBtn').on('click',function(){
   }
 
   //console.log(cargo_type_id);
-  var url='/calculator?auc_id='+aucId+'&aucloc_id='+auclocId+'&intldest_id='+intlDestId+'&cargo_type='+cargo_type_id;
+  var url='https://vsbrothers.com/calculator?auc_id='+aucId+'&aucloc_id='+auclocId+'&intldest_id='+intlDestId+'&cargo_type='+cargo_type_id;
   $(location).attr('href', url);
 });
 
@@ -108,7 +108,7 @@ function loadUsPorts(mobile=false)
   }
   $.ajax({
     type:"GET",
-    url : "/calculator-get-us-ports",
+    url : "https://vsbrothers.com/calculator-get-us-ports",
     data : {
       "location_id":aucLocationId
     },
@@ -152,7 +152,7 @@ function loadAucLocations(side=false)
 
   $.ajax({
     type:"GET",
-    url : "https://carmarket.az/calculator-get-auclocations",
+    url : "https://vsbrothers.com/calculator-get-auclocations",
     data : "auc_id="+aucId,
     success : function(response)
     {
@@ -281,7 +281,7 @@ function recalculate(param=0)
 
   $.ajax({
     type:"GET",
-    url : "/calculator-recalculate",
+    url : "https://vsbrothers.com/calculator-recalculate",
     data : {
       'auc_location_id':aucLocationId,
       'us_port_id':portUSId,
@@ -334,7 +334,7 @@ function recalculate(param=0)
         $('#price_insurance').text('$ '+parseFloat(data['price_insurance']).toFixed(2));
       }
 
-      var url="/calc-reserve?auc_location_id="+aucLocationId+
+      var url="https://vsbrothers.com/calc-reserve?auc_location_id="+aucLocationId+
         '&auc_id='+aucId+
         '&intl_port_id='+intlPortId+
         '&us_port_id='+portUSId+
@@ -406,7 +406,7 @@ function loadAucLocationsSm(){
 
   $.ajax({
     type:"GET",
-    url : "https://carmarket.az/calculator-get-auclocations",
+    url : "https://vsbrothers.com/calculator-get-auclocations",
     data : "auc_id="+aucId,
     success : function(response)
     {
@@ -434,7 +434,7 @@ function loadIntlPostCities_m()
   var data = "";
   $.ajax({
     type:"GET",
-    url : "/calculator-get-intlcities",
+    url : "https://vsbrothers.com/calculator-get-intlcities",
     data : "port_id="+portId,
     success : function(response) {
       $('#calcSelectIntlCities_m').empty();
@@ -488,7 +488,7 @@ function recalculate_m()
 
   $.ajax({
     type:"GET",
-    url : "/calculator-recalculate",
+    url : "https://vsbrothers.com/calculator-recalculate",
     data : {
       'auc_location_id':aucLocationId,
       'us_port_id':portUSId,
@@ -530,7 +530,7 @@ function recalculate_m()
       }
 
 
-      var url="/calc-reserve?auc_location_id="+aucLocationId+
+      var url="https://vsbrothers.com/calc-reserve?auc_location_id="+aucLocationId+
         '&auc_id='+aucId+
         '&intl_port_id='+intlPortId+
         '&us_port_id='+portUSId+
@@ -640,7 +640,7 @@ function loadIntlPostCities_car()
   var data = "";
   $.ajax({
     type:"GET",
-    url : "https://carmarket.az/calculator-get-intlcities",
+    url : "https://vsbrothers.com/calculator-get-intlcities",
     data : "port_id="+portId,
     success : function(response)
     {
@@ -676,7 +676,7 @@ function loadAucLocations_car()
 
   $.ajax({
     type:"GET",
-    url : "https://carmarket.az/calculator-get-auclocations",
+    url : "https://vsbrothers.com/calculator-get-auclocations",
     data : "auc_id="+aucId,
     success : function(response)
     {
@@ -709,7 +709,7 @@ function loadUsPorts_car()
   }
   $.ajax({
     type:"GET",
-    url : "https://carmarket.az/calculator-get-us-ports",
+    url : "https://vsbrothers.com/calculator-get-us-ports",
     data : {
       "location_id":aucLocationId
     },
@@ -790,7 +790,7 @@ function recalculate_car()
 
   $.ajax({
     type:"GET",
-    url : "https://carmarket.az/calculator-recalculate",
+    url : "https://vsbrothers.com/calculator-recalculate",
     data : {
       'auc_location_id':aucLocationId,
       'us_port_id':portUSId,
@@ -838,7 +838,7 @@ function recalculate_car()
         $('#price_total').text('Total: $ '+parseFloat(total_price).toFixed(2));
       }
 
-      var url="/calc-reserve?auc_location_id="+aucLocationId+
+      var url="https://vsbrothers.com/calc-reserve?auc_location_id="+aucLocationId+
         '&auc_id='+aucId+
         '&intl_port_id='+intlPortId+
         '&us_port_id='+portUSId+
