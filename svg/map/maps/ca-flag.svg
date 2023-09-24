@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="41px" height="27px" viewBox="0 0 41 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>ca-flag</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ca-flag">
+            <rect id="Rectangle-path" fill="#F0F0F0" fill-rule="nonzero" x="0" y="0.0261315789" width="41" height="26.9467895"></rect>
+            <g id="Group" fill-rule="nonzero" fill="#D80027">
+                <rect id="Rectangle-path" x="0" y="0.0261315789" width="13.666373" height="26.9476579"></rect>
+                <rect id="Rectangle-path" x="27.333627" y="0.0261315789" width="13.666373" height="26.9476579"></rect>
+                <polygon id="Shape" points="23.0625 15.3713684 25.625 14.1082105 24.34375 13.4767105 24.34375 12.2135526 21.78125 13.4767105 23.0625 10.9503947 21.78125 10.9503947 20.5 9.05557895 19.21875 10.9503947 17.9375 10.9503947 19.21875 13.4767105 16.65625 12.2135526 16.65625 13.4767105 15.375 14.1082105 17.9375 15.3713684 17.2969551 16.6345263 19.8594551 16.6345263 19.8594551 18.5293421 21.1407051 18.5293421 21.1407051 16.6345263 23.7032051 16.6345263"></polygon>
+            </g>
+            <rect id="Rectangle-5" stroke="#D8D8D8" stroke-width="0.25" x="0.125" y="0.125" width="40.75" height="26.75"></rect>
+        </g>
+    </g>
+</svg>

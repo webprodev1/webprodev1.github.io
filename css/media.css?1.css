@@ -1,0 +1,75 @@
+input,
+label {
+  display: inline;
+}
+
+input[type=radio]::-ms-check {
+  border-color: red;
+  color: red;
+}
+
+input[type=checkbox]::-ms-check {
+  border-color: green;
+  color: green;
+}
+
+input[type="checkbox"] {
+  border: none;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+
+input[type="checkbox"]:before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc !important;
+  background-color: transparent;
+}
+
+input[type="checkbox"].checks:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ccc !important;
+  background-color: #3265B1;
+  box-shadow: inset -3px 0 0 #fff, inset 3px 0 0 #fff, inset 0 -3px 0 #fff, inset 0 3px 0 #fff;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+
+input[type="radio"]:before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: block;
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #ccc !important;
+  background-color: transparent;
+}
+
+input[type="radio"].checked:before {
+  background-color: #3265B1;
+  box-shadow: inset -3px 0 0 #fff, inset 3px 0 0 #fff, inset 0 -3px 0 #fff, inset 0 3px 0 #fff;
+}
